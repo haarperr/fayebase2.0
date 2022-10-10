@@ -1,0 +1,67 @@
+-- -- Elevator
+
+-- RegisterNetEvent('np-jobs:hightable:main-floor:elevator_go_up')
+-- AddEventHandler('np-jobs:hightable:main-floor:elevator_go_up', function()
+--     local isEmployed = exports["np-business"]:IsEmployedAt("high_table")
+--     if isEmployed then
+--         local finished = exports['np-taskbar']:taskBar(5000, 'Calling Elevator')
+--         if (finished == 100) then
+--             SetEntityHeading(GetPlayerPed(-1), 286.29919433594)
+--             SetEntityCoords(PlayerPedId(), -316.8923034668,217.89889526367,99.86376953125)
+--         end
+--     end
+-- end)
+
+-- RegisterInterfaceCallback("np-elavator", function(data, cb)
+--     cb({ data = {}, meta = { ok = true, message = 'done' } })
+--     TriggerEvent('np-jobs:hightable:main-floor:elevator_go_up')
+--     exports["np-interface"]:hideContextMenu()
+-- end)
+
+-- RegisterNetEvent('hightable:elavatorup')
+-- AddEventHandler('hightable:elavatorup', function()
+-- 	local menuData = {
+-- 		{
+--             title = "Elevator",
+--             description = "High Table",
+--             key = true,
+-- 			children = {
+-- 				{ title = "Main Floor", action = "np-elavator", key = true},
+--             },
+--         },
+--     }
+--     exports["np-interface"]:showContextMenu(menuData)
+-- end)
+
+-- RegisterNetEvent('np-jobs:hightable:main-floor:elevator_go_down')
+-- AddEventHandler('np-jobs:hightable:main-floor:elevator_go_down', function()
+--     local isEmployed = exports["np-business"]:IsEmployedAt("high_table")
+--     if isEmployed then
+--         local finished = exports['np-taskbar']:taskBar(5000, 'Calling Elevator')
+--         if (finished == 100) then
+--             SetEntityHeading(GetPlayerPed(-1), 283.4645690918)
+--             SetEntityCoords(PlayerPedId(), -318.35604858398,217.02856445312,87.86669921875)
+--         end
+--     end
+-- end)
+
+-- RegisterInterfaceCallback("np-elavator2", function(data, cb)
+--     cb({ data = {}, meta = { ok = true, message = 'done' } })
+--     TriggerEvent('np-jobs:hightable:main-floor:elevator_go_down')
+--     exports["np-interface"]:hideContextMenu()
+-- end)
+
+-- RegisterNetEvent('hightable:elavatordown')
+-- AddEventHandler('hightable:elavatordown', function()
+-- 	local menuData = {
+-- 		{
+--             title = "Elevator",
+--             description = "High Table",
+--             key = true,
+-- 			children = {
+-- 				{ title = "First Floor", action = "np-elavator2", key = true},
+--             },
+--         },
+--     }
+--     exports["np-interface"]:showContextMenu(menuData)
+-- end)
