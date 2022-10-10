@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap');
+
+.login {
+  width: 750px;
+  overflow: hidden;
+  margin: 16px auto;
+  font-family: 'Cuprum', cursive;
+  font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
+.box-subtitle {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.25;
+  font-family: 'Cuprum', cursive;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.box-subtitle-small {
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 1.25;
+  font-family: 'Cuprum', cursive;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(247, 247, 247);
+}
+.login-header {
+  background-image: linear-gradient(to right bottom, #6beafb9f, #2d494e9f, #6787a09f, #555c6a9f, #3737379f);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+/* Sadge , the RGBA values dont work with background-image */
+
+.login-container {
+  background-image: linear-gradient(to right bottom, #6beafb9f, #2d494e9f, #6787a09f, #555c6a9f, #3737379f);
+  padding: 12px;
+  overflow: hidden;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 6px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+
+.btn_Register {
+  position: relative;
+  letter-spacing: 0.25em;
+  font-size: 30px;
+  height: 60px;
+  /* To center the text vertically */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn_Register::after,
+.btn_Register::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  background: transparent;
+  transition: all 0.7s cubic-bezier(0.7, -0.5, 0.25, 1.5);
+  z-index: -1;
+}
+
+.btn_Register::before {
+  top: -40%;
+  left: 0;
+  background-color: navajowhite;
+}
+
+.btn_Register::after {
+  top: 40%;
+  left: 50%;
+  background-color: greenyellow;
+}
+
+.btn_Register:hover::before {
+  top: 0;
+  left: 50%;
+  transform: skewX(0deg);
+}
+
+.btn_Register:hover::after {
+  top: 0;
+  left: 0;
+  transform: skewX(0deg);
+}
