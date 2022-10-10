@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 0;
+}
+
+.container-firsthack {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: rgb(20,20,20);
+    left: 20%;
+    top: 20%;
+    border-radius: 5px;
+    border: 2px solid rgb(100,100,100);;
+    box-shadow: 2px 2px 6px rgb(20,20,20);
+    display: none;
+}
+
+.left-nav {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: rgb(40,40,40);
+    border-right: 1px solid rgb(100,100,100);
+    width: 8%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btncode {
+    background-color: #40693b;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 11%;
+  }
+
+  .btnsequence {
+    background-color: #373f36;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    height: 11%;
+  }
+
+  .btninject {
+    background-color: #373f36;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    height: 11%;
+  }
+
+  .btnlogin {
+    position: absolute;
+    background: rgb(180, 180, 180);
+    font-weight:  600;
+    width: 20%;
+    border: 0;
+    border-bottom: 2px solid rgb(64, 255, 47);
+    color: rgb(0, 0, 0);
+    left: 40%;
+    top: 67%;
+    height: 7%;
+    box-shadow: 2px 2px 6px rgb(20,20,20);
+  }
+
+  .btnlogin:hover {
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgb(20,20,20);
+  }
+
+  .btninjectiontrojan {
+    position: absolute;
+    background: rgb(209, 42, 42);
+    font-weight: 600;
+    width: 36%;
+    border: 0;
+    color: rgb(255, 255, 255);
+    left: 32%;
+    top: 40%;
+    height: 12%;
+    box-shadow: 2px 2px 6px rgb(20,20,20);
+  }
+
+  .btninjectiontrojan:hover {
+    background: rgb(173, 0, 0);
+    box-shadow: 2px 2px 6px rgb(20,20,20);
+  }
+
+  .stage-one {
+    position: absolute;
+    left: 11%;
+    top: 5%;
+    background-image: linear-gradient(to left bottom, rgb(56, 56, 56) , rgb(10, 24, 11));
+
+    border: 1px solid rgb(100,100,100);
+    width: 86%;
+    height: 90%;
+    background-size: 100%;
+  }
+
+  .stage-two {
+    position: absolute;
+    left: 11%;
+    top: 5%;
+    background-image: linear-gradient(to left bottom, rgb(56, 56, 56) , rgb(10, 24, 11));
+
+    border: 1px solid rgb(100,100,100);
+    width: 86%;
+    height: 90%;
+    background-size: 100%;
+    display: none;
+  }
+
+  .stage-three {
+    position: absolute;
+    left: 11%;
+    top: 5%;
+    background-image: linear-gradient(to left bottom, rgb(56, 56, 56) , rgb(10, 24, 11));
+
+    border: 1px solid rgb(100,100,100);
+    width: 86%;
+    height: 90%;
+    background-size: 100%;
+    display: none;
+  }
+
+  .stage-success {
+    position: absolute;
+    left: 11%;
+    top: 5%;
+    background:rgba(0, 0, 0, 0.8);
+    width: 86%;
+    height: 90%;
+    display: none;
+  }
+
+  .stage-failure {
+    position: absolute;
+    left: 11%;
+    top: 5%;
+    background:rgba(0, 0, 0, 0.8);
+    width: 86%;
+    height: 90%;
+    display: none;
+  }
+
+.passwordinput {
+      width: 30%;
+      margin-left: 37%;
+      height: 8%;
+      bottom: 39%;
+      background: rgb(17, 17, 17);
+      border: 0;
+      position: absolute;
+      color: rgb(64, 255, 47);
+      font-size: 1.4rem;
+      padding: 10px 10px 10px 10px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+}
+
+  .passwordinput:focus {
+    outline: none;
+    background: rgb(3, 27, 6);
+}
+
+.hackinginput {
+    width: 60%;
+    margin-left: 20%;
+    height: 8%;
+    bottom: 4%;
+    background: black;
+    border: 2px solid rgba(255, 255, 255, 0.658);
+    position: absolute;
+    color: rgb(64, 255, 47);
+    font-size: 1.2rem;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hackinginput:focus {
+    outline: none;
+    background: rgb(32, 32, 32);
+}
+
+.userinput {
+    width: 30%;
+    margin-left: 37%;
+    height: 8%;
+    bottom: 49%;
+    background: rgb(17, 17, 17);
+    border: 0;
+    position: absolute;
+    color: rgb(64, 255, 47);
+    font-size: 1.4rem;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.userinput:focus {
+  outline: none;
+  background: rgb(3, 27, 6);
+}
+
+  .terminalicon {
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    margin-left: 31.5%;
+    bottom: 39%;
+    background: rgb(17, 17, 17);
+    border: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem !important;
+    border-right: 2px solid rgb(64, 255, 47);
+  }
+
+  .usericon {
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    margin-left: 31.5%;
+    bottom: 49%;
+    background: rgb(17, 17, 17);
+    border: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem !important;
+    border-right: 2px solid rgb(64, 255, 47);
+  }
+
+  .fa-lock {
+      margin-top: 20%;
+  }
+
+  .fa-user {
+    margin-top: 20%;
+  }
+
+  .fleecalogo {
+      position: absolute;
+      width: 20%;
+      left: 40%;
+      top: 20%;
+  }
+
+  .consolewindow {
+      position: absolute;
+      width: 90%;
+      height: 70%;
+      left: 5%;
+      top: 12%;
+      background: black;
+      border: 2px solid rgba(255, 255, 255, 0.658);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .word {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: rgb(0, 255, 0);
+    display: inline-block;
+    margin-top: 10px;
+    width: 18%;
+    height: 17%;
+    background: rgb(24, 24, 24);
+    border: 2px solid rgb(46, 46, 46);
+    padding: 30px 35px 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 320%;
+  }
+
+  .hackingtitle {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 0.9rem;
+      position: absolute;
+      width: 70%;
+      color: white;
+      left: 5%;
+      height: 6%;
+      padding: 8px;
+      margin-top: 1%;
+      line-height: 200%;
+      letter-spacing: 1px;
+  }
+
+  .hackingwords {
+      font-family: 'Varela Round', sans-serif;
+      position: absolute;
+      background: black;
+      width: 18%;
+      color: white;
+      padding: 8px;
+      left: 78%;
+      top: -1.5%;
+      text-align: center;
+      letter-spacing: 4px;
+      border: 2px solid rgba(255, 255, 255, 0.658);
+  }
+
+  #myProgress {
+    position: absolute;
+    bottom: -3%;
+    left: -1px;
+    width: 100%;
+    background-color: rgb(0, 36, 0);
+    border: 1px solid rgb(100,100,100);
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 5px;
+    background-color: rgb(8, 196, 8);
+  }

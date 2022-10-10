@@ -1,0 +1,82 @@
+<title>Aspect's Hacking</title>
+<html style="overflow-y: hidden;">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="nui://game/ui/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container-firsthack">
+
+        <div class="left-nav">
+            <button class="btncode" id="stage1button"><i class="fa fa-code"></i><p style="font-size: 0.6rem;">STAGE 1</p></button>
+            <button class="btnsequence" id="stage2button"><i class="fa fa-list-ol"></i><p style="font-size: 0.6rem;">STAGE 2</p></button>
+            <button class="btninject" id="stage3button"><i class="fa fa-bug"></i><p style="font-size: 0.6rem;">STAGE 3</p></button>
+        </div>
+
+        <div class="stage-one">
+                <img src="img/fleecalogo.png" class="fleecalogo">
+
+                <div class="terminalicon">
+                    <i class="fa fa-lock"></i>
+                </div>
+                <div class="usericon">
+                    <i class="fa fa-user"></i>
+                </div>
+
+                <input type="text" class="userinput" id="usernameinput">
+                <input type="password" class="passwordinput" id="passwordinput">
+
+                <button class="btnlogin" onclick="enterdatabase()"><p style="font-size: 0.8rem; line-height: 0%;">ENTER DATABASE</p></button>                
+        </div>
+
+        <div class="stage-two">
+            <h3 class="hackingtitle">Input the encrypted code to bypass the security system.</h3>
+            <h3 class="hackingwords" id="hackingoutputwords">00, 00, 00, 00</h3>
+
+            <div class="consolewindow">
+                <div class="word wrapper1" id="display1"><h2>[1] WORD</h2></div>
+                <div class="word wrapper2" id="display2"><h2>[2] WORD</h2></div>
+                <div class="word wrapper3" id="display3"><h2>[3] WORD</h2></div>
+                <div class="word wrapper4" id="display4"><h2>[4] WORD</h2></div>
+                <div class="word wrapper5" id="display5"><h2>[5] WORD</h2></div>
+                <div class="word wrapper6" id="display6"><h2>[6] WORD</h2></div>
+                <div class="word wrapper7" id="display7"><h2>[7] WORD</h2></div>
+                <div class="word wrapper8" id="display8"><h2>[8] WORD</h2></div>
+                <div class="word wrapper9" id="display9"><h2>[9] WORD</h2></div>
+                <div class="word wrapper10" id="display10"><h2>[10] WORD</h2></div>
+                <div class="word wrapper11" id="display11"><h2>[11] WORD</h2></div>
+                <div class="word wrapper12" id="display12"><h2>[12] WORD</h2></div>
+            </div>
+
+            <form name="answerbox" target="#here" onsubmit="hackinganswer()" method="post">
+                <input type="text" class="hackinginput" id="inputanswerhack">
+                <input type="submit" hidden="true" />
+            </form>
+
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+
+        </div>
+
+        <div class="stage-three">
+            <h3 class="hackingtitle">Inject the trojan into the fleeca firewall.</h3>
+
+                <button class="btninjectiontrojan" onclick="injecttrojan()"><p style="font-size: 0.8rem; line-height: 0%;">INJECT TROJAN</p></button>    
+
+        </div>
+
+        <div class="stage-success">
+            <h1 style="position: absolute; width:100%; top:45%; color: rgb(34, 180, 34); text-transform:uppercase; text-align: center; font-family: Verdana; letter-spacing: 6px;">SUCCESS</h1>
+        </div>
+
+        <div class="stage-failure">
+            <h1 style="position: absolute; width:100%; top:45%; color: rgb(236, 55, 55); text-transform:uppercase; text-align: center; font-family: Verdana; letter-spacing: 6px;">FAILURE</h1>
+        </div>
+
+    </div>
+</body>
+</html>

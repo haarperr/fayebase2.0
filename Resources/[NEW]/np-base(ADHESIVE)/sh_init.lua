@@ -1,0 +1,1 @@
+Void = Void or {}
